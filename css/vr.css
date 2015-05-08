@@ -1,0 +1,272 @@
+
+/* 
+
+--- Vertical Rhythm Tool - http://soqr.fr/vertical-rhythm/ --- 
+           Font-size : 16px  Line-height : 1.5
+
+*/
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6em;
+    line-height: 1.5;
+    width: 100%;
+    margin: 0 auto;
+}
+p, 
+ul, 
+ol, 
+dl, 
+blockquote, 
+pre, 
+td, 
+th, 
+textarea {
+    font-size: 1em; /* equiv 16px */
+    line-height: 1.5;
+    margin: .75em 0;
+}
+
+ol {
+  padding-left: 4em;
+}
+ul {
+  padding-left: 2em;
+}
+
+/* When creating unordered lists (poss ordred too) the CMS / eds tend to insert paragraphs with there <li> --- so its <ul><li><p>blah blah blah </p></li></ul> */
+ul li p {
+  padding: 0;
+  margin: 0;
+} /* this should reset it */
+
+h1#title {
+  font-size:  2em; /* equiv 28px */
+  font-weight: bold;
+  line-height: 1.7142;
+  background-color: #ee6b1e;
+  color: #fff;
+  padding: 0.32352941em;
+  margin: 0;
+}
+h1, 
+.h1-like {
+    font-size:  2em; /* equiv 28px */
+    font-weight: bold;
+    line-height: 1.7142;
+    margin: .8571em 0 .42855em 0;
+}
+
+h2#subtitle {
+  font-size:  1.625em; /* equiv 26px */
+  font-weight: bold;
+  line-height: 1.8462;
+  background-color: #2b5797;
+  color: #fff;
+  padding: 0.32352941em;  
+  margin: 0;
+}
+h2, 
+.h2-like {
+    font-size:  1.625em; /* equiv 26px */
+    font-weight: bold;
+    line-height: 1.8462;
+    margin: .9231em 0 .46155em 0;
+}
+
+#inner-wrapper {
+  width: 880px;
+  margin: 0 auto;
+}
+#inner-wrapper h2 {
+    font-size:  1.625em; /* equiv 26px */
+    line-height: 1.8462;
+    margin: 1em 0;
+}
+h3, 
+.h3-like {
+    font-size:  1.5em; /* equiv 24px */
+    font-weight: bold;
+    line-height:  1;
+    margin:  1em 0 .5em 0;
+}
+h3.test {
+  background-color: #2a6ebb;
+  color: #fff;
+  padding: 16px;
+  margin: 1em 0;
+}
+h4, 
+.h4-like {
+    font-size:  1.375em; /* equiv 22px */
+    font-weight: bold;
+    line-height:  1.0909;
+    margin:  1.0909em 0 .54545em;
+}
+.demo-frame h4 {
+    font-size:  1.375em; /* equiv 22px */
+    font-weight: bold;
+    line-height:  1.0909;
+    margin:  2.1818em 0  1.0909em 0;
+}
+h5, 
+.h5-like {
+    font-size:  1.25em; /* equiv 20px */
+    font-weight: bold;
+    line-height:  1.2;
+    margin:  1.2em 0 .6em 0;
+}
+h6, 
+.h6-like {
+    font-size:  1.125em; /* equiv 18px */
+    line-height:  1.3333;
+    margin:  2.6666em 0  1.3333em 0;
+}
+.smaller {
+    font-size: .75em; /* equiv 12px */
+    line-height:  2;
+    margin:  2em 0  2em 0;
+}
+.small {
+    font-size: .875em; /* equiv 14px */
+    line-height:  1.7143;
+    margin:  1.7143em 0  1.7143em 0;
+}
+.big {
+    font-size:  1.125em; /* equiv 18px */
+    line-height:  1.3333;
+    margin:  1.3333em 0  1.3333em 0;
+}
+.bigger {
+    font-size:  1.25em; /* equiv 20px */
+    line-height:  1.2;
+    margin:  1.2em 0  1.2em 0;
+}
+.biggest {
+    font-size:  1.375em; /* equiv 22px */
+    line-height:  1.0909;
+    margin:  1.0909em 0  1.0909em 0;
+}
+/* avoid collapsing margins
+you might need this, depending on your design
+*/
+/*
+h1:first-child, 
+h2:first-child, 
+h3:first-child, 
+h4:first-child, 
+h5:first-child, 
+h6:first-child {
+    margin-top: 0;
+}
+*/
+/* avoid last-child bottom margin */
+p:last-child, 
+ul:last-child, 
+ol:last-child, 
+dl:last-child, 
+blockquote:last-child, 
+pre:last-child, 
+table:last-child {
+    margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2a6ebb;
+  }
+/* avoid supp margin on nested elements */
+li p,
+li ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* you shall not pass */
+textarea,
+table, 
+td, 
+th, 
+code, 
+pre, 
+samp, 
+div, 
+p {
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+}
+code, 
+pre, 
+samp {
+    white-space: pre-wrap;
+    font-family: consolas, 'DejaVu Sans Mono', courier, monospace;
+}
+code {
+    line-height: 1;
+}
+table {
+    margin-bottom: 1.5em;
+}
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+dl  {
+  
+  }
+dl dt {
+  font-weight: bold;
+  }
+dl dt dd {
+
+  }  
+
+/* ACCORDIAN */
+.content {
+  display:none;
+  border-bottom: 2px dashed #333;
+  }
+
+.expander.expanded {
+    padding-left: 25px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-image: url(../images/expanded.png);
+    width: 16px;
+}
+
+.expander.collapsed {
+    padding-left: 25px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-image: url(../images/collapsed.png);
+    width: 16px;
+}        
+
+#demo-nesting-sub1 {
+    margin-left: 20px;
+}
+
+#demo-nesting-sub2 {
+    margin-left: 40px;
+}      
